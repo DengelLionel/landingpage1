@@ -1,6 +1,6 @@
 import React from 'react'
 import { useContext } from 'react'
-import { LandingContext } from '../context/landing'
+import { LandingContext } from '../context/Landing'
 import Link from 'next/link'
 const Nav = () => {
     const {openMenu}=useContext(LandingContext)

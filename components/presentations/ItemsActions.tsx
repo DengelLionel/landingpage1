@@ -1,6 +1,6 @@
 import React from 'react'
 import { useContext } from 'react'
-import { LandingContext } from '../../context/landing'
+import { LandingContext } from '../../context/Landing'
 import { useItemsActions } from '../../hooks/useItemsActions'
 import IconPc from "../icons/IconPc"
 import IconSetting from "../icons/IconSetting"

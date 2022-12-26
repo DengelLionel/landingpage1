@@ -1,6 +1,6 @@
 import React from 'react'
 import { useContext,useEffect } from 'react'
-import { LandingContext } from '../../context/landing'
+import { LandingContext } from '../../context/Landing'
 const ServiceOne = () => {
   const {openProductoUno} =useContext(LandingContext)
   useEffect(()=>{
