@@ -3,7 +3,7 @@ import Image from 'next/image'
 import ButtonMenu from './sections/ButtonMenu'
 import Nav from './Nav'
 import { useContext } from 'react'
-import { LandingContext } from '../context/landing'
+import { LandingContext } from '../context/Landing'
 const Header = () => {
     const {setOpenMenu,openMenu}=useContext(LandingContext)
   return (
