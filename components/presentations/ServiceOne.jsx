@@ -7,7 +7,7 @@ const ServiceOne = () => {
   useEffect(()=>{
     
   },[openProductoUno])
-  console.log("open p",openProductoUno)
+
   return (
     <section className={`absolute transition-all duration-500 w-full  ${openProductoUno===true?'left-0':'-left-[100%]'}`}>
       <BoxPresentation

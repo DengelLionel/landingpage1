@@ -10,7 +10,7 @@ const ServiceThree = () => {
     <BoxPresentation
      titulo="Somos agencia digital"
      resumen="Seamos parte de colaborar con soluciones digitales eficientes para tu negocio."
-     imagen="https://fotos.perfil.com/2021/02/06/trim/950/534/20210207cienciatecnologiashutterstockg-1124481.jpg"
+     imagen="https://www.cybercenter.cl/images/blog/fotos/que-pedir-agencia-marketing-digital.jpg"
      />
   </section>
   )

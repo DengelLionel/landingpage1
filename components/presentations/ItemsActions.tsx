@@ -11,18 +11,18 @@ const ItemsActions = () => {
   return (
     <section className='flex flex-col p-[16px]'>
     <section className='p-[16px] flex flex-row gap-[18px]'>
-        <button onClick={()=>OpenProducto1()} className='w-[99px] flex flex-col justify-center items-center'>
+        <button onClick={()=>OpenProducto1()} className='w-[99px] flex flex-col gap-2 justify-center items-center'>
         <IconPc/>
         <h2 className='font-semibold font-Poppins text-[14px]'>Producto Número 1</h2>
         </button>
 
 
-        <button onClick={()=>OpenProducto2()} className='w-[99px] flex flex-col justify-center items-center'>
+        <button onClick={()=>OpenProducto2()} className='w-[99px] flex flex-col gap-2 justify-center items-center'>
        <IconSetting/>
     <h2 className='font-semibold font-Poppins text-[14px]'>Producto Número 2</h2>
         </button>
 
-        <button onClick={()=>OpenProducto3()} className='w-[99px] flex flex-col justify-center items-center'>
+        <button onClick={()=>OpenProducto3()} className='w-[99px] flex flex-col gap-2 justify-center items-center'>
         <IconMobile/>
 <h2 className='font-semibold font-Poppins text-[14px]'>Producto Número 3</h2>
         </button>
