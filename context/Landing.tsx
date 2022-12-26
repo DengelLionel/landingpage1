@@ -28,6 +28,8 @@ export const LandingHandler = ({children}:context) => {
     const [openProductoUno,setOpenProductoUno]=useState<boolean|undefined>(true);
     const [openProducto2,setOpenProducto2]=useState<boolean|undefined>(false);
     const [openProducto3,setOpenProducto3]=useState<boolean|undefined>(false);
+    
+
   const data={
     openMenu,setOpenMenu,openProductoUno,setOpenProductoUno,openProducto2,setOpenProducto2,openProducto3,setOpenProducto3
   }
