@@ -12,7 +12,7 @@ const PageLayout = ({children,title="landing"}:pageLayout) => {
     <link rel="icon" href="/favicon.ico" />
   </Head>
   <header>█ dengel</header>
-  <main>
+  <main className=' h-full overflow-y-scroll '>
     {children}
   </main>
   </>
