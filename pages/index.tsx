@@ -4,7 +4,7 @@ import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 import Header from '../components/Header'
 import { useContext } from 'react'
-import { LandingContext } from '../context/landing'
+import { LandingContext } from '../context/Landing'
 import Presentation from '../components/presentations'
 export default function Home() {
   const {setOpenMenu}=useContext(LandingContext)

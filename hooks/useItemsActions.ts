@@ -1,6 +1,6 @@
 import React from 'react'
 import { useContext } from 'react'
-import { LandingContext } from '../context/landing'
+import { LandingContext } from '../context/Landing'
 export const useItemsActions = () => {
     const {setOpenProductoUno,setOpenProducto2,setOpenProducto3}=useContext(LandingContext);
     const OpenProducto1=()=>{
