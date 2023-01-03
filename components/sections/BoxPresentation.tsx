@@ -20,7 +20,7 @@ const BoxPresentation = ({titulo,resumen,imagen,link}:boxPresentation) => {
 
       </article>
       <article className='md:hidden'> 
-      <Image style={{"marginTop":"21px"}} width={360} height={300} src={imagen} alt="image"/>
+      <Image style={{"marginTop":"21px"}} width={360} height={300} src={imagen} alt="image" priority/>
         </article>
         
   
