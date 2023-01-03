@@ -6,7 +6,7 @@ const Nav = () => {
     const {openMenu}=useContext(LandingContext)
     return (
     <>
-    <nav className={`bg-primary w-full h-[300px] z-[40] transition-all duration-1000 fixed ${openMenu===true?' top-[60px]':'top-[-100%]'}  md:hidden ` }>
+    <nav className={`bg-black w-full h-[300px] z-[40] transition-all duration-1000 fixed ${openMenu===true?' top-[60px]':'top-[-100%]'}  md:hidden ` }>
     </nav>
     <nav className='hidden md:flex h-[auto] '>
         <ul className='text-white1 font-semibold font-Poppins text-[24px]'>
