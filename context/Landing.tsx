@@ -9,6 +9,10 @@ interface contextMain{
     setOpenProducto2:(data3:boolean|undefined)=>void,
     openProducto3:boolean|undefined,
     setOpenProducto3:(data4:boolean|undefined)=>void,
+    idEqual:number|undefined,
+    setIdEqual:(data5:number|undefined)=>void,
+    idd:any|undefined,
+    setIdd:(data6:any|undefined)=>void,
 }
 export const LandingContext=createContext<contextMain>({
 openMenu:false,
@@ -19,6 +23,10 @@ openProducto2:false,
 setOpenProducto2:()=>{},
 openProducto3:false,
 setOpenProducto3:()=>{},
+idEqual:undefined,
+setIdEqual:()=>{},
+idd:{id:0,state:false},
+setIdd:()=>{}
 });
 interface context{
     children:any
@@ -28,10 +36,11 @@ export const LandingHandler = ({children}:context) => {
     const [openProductoUno,setOpenProductoUno]=useState<boolean|undefined>(true);
     const [openProducto2,setOpenProducto2]=useState<boolean|undefined>(false);
     const [openProducto3,setOpenProducto3]=useState<boolean|undefined>(false);
-    
+    const [idEqual,setIdEqual]=useState<number|undefined>(undefined);
+    const [idd,setIdd]=useState<any|undefined>({id:0,state:false}); 
 
   const data={
-    openMenu,setOpenMenu,openProductoUno,setOpenProductoUno,openProducto2,setOpenProducto2,openProducto3,setOpenProducto3
+    openMenu,setOpenMenu,openProductoUno,setOpenProductoUno,openProducto2,setOpenProducto2,openProducto3,setOpenProducto3,idEqual,setIdEqual,idd,setIdd
   }
     return (
     <LandingContext.Provider value={data}>

@@ -7,7 +7,7 @@ import { LandingContext } from '../context/Landing'
 const Header = () => {
     const {setOpenMenu,openMenu}=useContext(LandingContext)
   return (
-    <header className='bg-primary p-[16px] w-full h-[64px] flex flex-grow gap-[260px] justify-center items-center xl:gap-[345px] xl:pl-[201px] xl:pr-[201px]'>
+    <header className='bg-primary p-[16px] z-[40] w-full h-[64px] fixed top-0 flex flex-grow gap-[260px] justify-center items-center xl:gap-[345px] xl:pl-[201px] xl:pr-[201px]'>
         <Image width={35} height={35} src="/img/logo.jpeg"alt="" priority/>
        <ButtonMenu open={()=>setOpenMenu(!openMenu)} />
        <Nav/>

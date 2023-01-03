@@ -6,7 +6,7 @@ const ServiceTwo = () => {
   const {openProducto2}=useContext(LandingContext)
  
   return (
-    <section className={`absolute transition-all duration-500 w-full  ${openProducto2===true?'left-[0px]':'-left-[100%]'}`}>
+    <section className={` transition-all duration-500 xl:duration-300  ${openProducto2===true?'w-full  xl:w-[576px] h-auto  opacity-100':'w-0 opacity-0 h-0 overflow-hidden'}`}>
       
     <BoxPresentation
      titulo="Somos Proverze la magia de tec"

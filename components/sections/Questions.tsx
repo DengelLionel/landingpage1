@@ -1,26 +1,34 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState,useContext } from 'react'
 import ItemQuestion from "./ItemQuestion"
 import {questions} from "../../user/data"
+import { LandingContext } from '../../context/Landing'
+import { useQuestions } from '../../hooks/useQuestions'
+import ContentQuestion from './ContentQuestion'
 const Questions = () => {
-  const [data,setData]=useState<any>(questions)
-  const Update=()=>{
-    setData(questions)
-   } 
-  useEffect(()=>{
-   
-   Update()
-  })
+
+ const {setIdd,idd}=useContext(LandingContext)
+
+
+  const {HandleId}=useQuestions()
+useEffect(()=>{
+  HandleId()
+})
+  
   return (
     <section>
-        <h2 className='font-Poppins font-semibold text-[24px] text-center tracking-normal mb-[15px]'>Preguntas Frecuentes</h2>
-        {data?.map((question:any)=>
+        <h2 className='font-Poppins font-semibold text-[24px] text-center tracking-normal mb-[15px] xl:text-[36px]'>Preguntas Frecuentes</h2>
+        {questions?.map((question:any)=>
         {
           return(
+            <article key={question.id}>
             <ItemQuestion
-             identificador={question.id}
-             state={question.state}
+            todo={question}
+             
+             Handle={()=>{ setIdd({id:question.id,state:!question.state})}}
               key={question.id}
                pregunta={question.question}/>
+              <ContentQuestion todo={question} answer={question.answer}/>
+               </article>
         )})}
       
      

@@ -19,6 +19,11 @@ module.exports = {
       fontFamily:{
         "Poppins":["sans-serif"],
         "Roboto":["sans-serif"],
+      },
+      backgroundImage:{
+        "fondo1":"url('https://fotos.perfil.com/2021/02/06/trim/950/534/20210207cienciatecnologiashutterstockg-1124481.jpg')",
+        "fondo2":"url('https://kardumtech.es/wp-content/uploads/2021/05/workers-it-company-working-computer-1-scaled-2560x1280.jpg')",
+        "fondo3":"url('https://www.cybercenter.cl/images/blog/fotos/que-pedir-agencia-marketing-digital.jpg')"
       }
     },
   },

@@ -6,7 +6,8 @@ import Header from '../components/Header'
 import { useContext } from 'react'
 import { LandingContext } from '../context/Landing'
 import Presentation from '../components/presentations'
-
+import Footer from '../components/Footer'
+/* import "componentes-dengel/dist/style.css" */
 export default function Home() {
   const {setOpenMenu}=useContext(LandingContext)
   return (
@@ -20,12 +21,17 @@ export default function Home() {
         <main className='overflow-y-auto'>
           {/* <Link href="/den/lista">IR A LA LISTA</Link> */}
           <Presentation/>
-         
+          
         </main>
-
-     {/*  <footer  className={styles.footer}>
         
-      </footer> */}
+        <footer>
+        <Footer/>
+        </footer>
+        
+       
+        
+      
+      
     </div>
   )
 }
