@@ -6,7 +6,7 @@ export const useQuestions=()=>{
     const HandleId=()=>{
            
         questions?.map((question:any)=>{
-          console.log("idd",idd.id,idd.state)
+        
           if(question.id===idd.id){
             
             question.state=idd.state

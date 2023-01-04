@@ -14,8 +14,7 @@ interface itemQuestion{
 const ItemQuestion = ({pregunta,todo,Handle}:itemQuestion) => {
 const {HandleId}=useQuestions()
 const{idEqual,idd}=useContext(LandingContext)
-console.log("questions",questions)
- console.log("todo",idd,todo)
+
  useEffect(()=>{
   HandleId()
  },[idd])
