@@ -4,7 +4,7 @@ interface buttonMenu{
 }
 const ButtonMenu = ({open}:buttonMenu) => {
   return (
-    <button onClick={open}>
+    <button aria-labelledby="open" aria-label='menu' type='button' onClick={open}>
     <svg className='md:hidden' width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="31" height="31" fill="url(#pattern0)"/>
 <defs>

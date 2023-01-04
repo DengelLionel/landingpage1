@@ -23,7 +23,7 @@ console.log("questions",questions)
     <article className='w-full h-auto text-[16px] font-Roboto font-normal bg-blue1 pt-2 pb-2 flex flex-row items-center justify-center mb-[5px] xl:w-[815px] '>
         <h3 className='text-white1 tracking-wider w-[250px] text-[18px] xl:w-[600px] xl:text-[26px] '>{pregunta} </h3>
         
-        <button onClick={Handle} >
+        <button aria-labelledby="openQuestion" aria-label='question' type='button' onClick={Handle} >
      
           <IconPluss  className={`feather feather-plus text-white1 relative left-5 transition-all duration-500  ${idd.id===todo.id&&idd.state===true&&'rotate-45'}`} />
           

@@ -13,7 +13,7 @@ const NavLink = ({title,subcategory}:navlink) => {
    
        
     <Link className='text-white1 font-semibold p-[8px] font-Roboto text-[20px] ' href="#">
-    <button className='flex flex-row gap-[180px] items-center' onClick={()=>subcategory&&setOpenSubCategory(!openSubCategory)}>
+    <button aria-labelledby="openSub" aria-label='menusub' type='button' className='flex flex-row gap-[180px] items-center border-none appearance-none hover:bg-black outline-none  focus:text-yellow1 active:outline-none focus:outline-none' onClick={()=>subcategory&&setOpenSubCategory(!openSubCategory)}>
         <span>{title}</span>
         
     {subcategory===true&&(
