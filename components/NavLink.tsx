@@ -10,14 +10,23 @@ interface navlink{
 const NavLink = ({title,subcategory}:navlink) => {
     const {openSubCategory,setOpenSubCategory}=useContext(LandingContext)
   return (
-    <section className='flex flex-row gap-[180px] items-center'>
-    <Link className='text-white1 font-semibold p-[8px] font-Roboto text-[20px]' href="#">{title}</Link>
+   
+       
+    <Link className='text-white1 font-semibold p-[8px] font-Roboto text-[20px] ' href="#">
+    <button className='flex flex-row gap-[180px] items-center' onClick={()=>subcategory&&setOpenSubCategory(!openSubCategory)}>
+        <span>{title}</span>
+        
     {subcategory===true&&(
-        <button onClick={()=>setOpenSubCategory(!openSubCategory)}>
-            <IconBarraArrow  className={`transition-all duraction-500 text-white ${openSubCategory===true&&'rotate-180'}`}/>
-        </button>
-    )}
-    </section>
+        
+        <IconBarraArrow  className={`transition-all duraction-500 text-white ${openSubCategory===true&&'rotate-180'}`}/>
+   
+)}
+</button>
+    </Link>
+   
+    
+     
+    
     
 
   )
