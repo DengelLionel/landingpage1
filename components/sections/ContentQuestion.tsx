@@ -8,8 +8,8 @@ interface contentQuestion{
 const ContentQuestion = ({answer,todo}:contentQuestion) => {
     const {idd}=useContext(LandingContext)
   return (
-    <article className={`bg-blue1 transition-all duration-300 w-full xl:w-[815px] ${idd.id===todo.id&&idd.state===true?' h-auto opacity-100 p-[15px] xl:p-[20px] mb-[5px]':'opacity-0 h-[0px] overflow-hidden'}`}>
-        <p className='text-white1 font-Roboto font-normal text-[16px] xl:text-[1.625rem]'>{answer} </p>
+    <article className={`bg-blue1 transition-all duration-300 w-full lg:w-[750px] xl:w-[815px] ${idd.id===todo.id&&idd.state===true?' h-auto opacity-100 p-[15px] xl:p-[20px] mb-[5px]':'opacity-0 h-[0px] overflow-hidden'}`}>
+        <p className='text-white1 font-Roboto font-normal text-[16px] sm:text-[20px] xl:text-[1.625rem]'>{answer} </p>
     </article>
   )
 }

@@ -16,7 +16,7 @@ useEffect(()=>{
   
   return (
     <section>
-        <h2 className='font-Poppins font-semibold text-[24px] text-center tracking-normal mb-[15px] xl:text-[36px]'>Preguntas Frecuentes</h2>
+        <h2 className='font-Poppins font-semibold text-[24px] text-center tracking-normal mb-[15px] sm:text-[31.25px] xl:text-[36px]'>Preguntas Frecuentes</h2>
         {questions?.map((question:any)=>
         {
           return(

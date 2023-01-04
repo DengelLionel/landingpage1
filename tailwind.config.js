@@ -14,7 +14,8 @@ module.exports = {
         "blue1":"#03071C",
         "plomo1":"#C1C1C4",
         "white1":"#ECF0F9",
-        "yellow1":"#c9e617"
+        "yellow1":"#c9e617",
+        "whiteTransparent":"rgba(255,255,255,.9)",
 
       },
       fontFamily:{

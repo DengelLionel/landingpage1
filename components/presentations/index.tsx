@@ -15,7 +15,7 @@ const Presentation = () => {
   return (
     <section>
      {/* MOBIL */}
-    <section className=' md:hidden'>
+    <section className=' lg:hidden'>
     <ItemsActions/>
      <ServiceOne/> 
      <ServiceTwo/>
@@ -23,9 +23,9 @@ const Presentation = () => {
     </section>
     {/* DESKTOP */}
     
-      <section className={`hidden md:flex xl:h-[700px] transition-all duration-1000  xl:bg-cover xl:bg-no-repeat xl:justify-left xl:items-center xl:pl-[50px] ${openProductoUno===true&&"xl:bg-fondo1"} ${openProducto2===true&&'xl:bg-fondo2'} ${openProducto3===true&&'xl:bg-fondo3'}`}>
+      <section className={`hidden md:hidden lg:flex lg:justify-center lg:items-center lg:h-[800px] xl:h-[700px] transition-all duration-1000  lg:bg-cover lg:bg-no-repeat xl:justify-left xl:items-center xl:pl-[50px] ${openProductoUno===true&&"lg:bg-fondo1 xl:bg-fondo1"} ${openProducto2===true&&' lg:bg-fondo2 xl:bg-fondo2 '} ${openProducto3===true&&'lg:bg-fondo3 xl:bg-fondo3'}`}>
       
-      <article className=' xl:rounded-bl-xl xl:rounded-br-xl xl:rounded-tl-xl xl:rounded-tr-xl xl:flex xl:flex-col xl:h-[500px]   bg-white1 xl:w-[576px]'>
+      <article className=' lg:rounded-bl-xl lg:rounded-br-xl lg:rounded-tl-xl lg:rounded-tr-xl lg:w-[470px] lg:bg-whiteTransparent lg:h-[620px] xl:rounded-bl-xl xl:rounded-br-xl xl:rounded-tl-xl xl:rounded-tr-xl xl:flex xl:flex-col xl:h-[500px]   xl:bg-whiteTransparent xl:w-[576px]'>
       <ItemsActions/>
      <ServiceOne/> 
      <ServiceTwo/>
@@ -36,7 +36,7 @@ const Presentation = () => {
    
     
 
-    <section className='xl:flex xl:flex-col xl:justify-center xl:items-center'>
+    <section className='lg:flex lg:flex-col lg:justify-center lg:items-center'>
 
       {services?.map((service:any)=>{
         return(
